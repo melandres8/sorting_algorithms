@@ -15,11 +15,8 @@ void bubble_sort(int *array, size_t size)
 		status = 1;
 		for (i = 0; i < size - 1; i++)
 		{
-			/*If first position of an array is greater
-			than the second, those integers are swapped*/
 			if (array[i] > array[i + 1])
 			{
-				/*Swapping two integer in an array*/
 				tmp = array[i];
 				array[i] = array[i + 1];
 				array[i + 1] = tmp;
