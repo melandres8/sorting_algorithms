@@ -7,7 +7,7 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t i, j;
+	size_t i, j, min;
 	int tmp;
 
 	if (array == NULL || size < 2)
@@ -15,7 +15,7 @@ void selection_sort(int *array, size_t size)
 
 	for (i = 0; i < size - 1; i++)
 	{
-		unsigned int min = i;
+		min = i;
 
 		for (j = i + 1; j < size; j++)
 		{
