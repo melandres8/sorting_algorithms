@@ -35,3 +35,15 @@ void shell_sort(int *array, size_t size)
 		print_array(array, size);
 	}
 }
+/**
+ * swap - function that swaps integers
+ * @a: first integer
+ * @b: second integer
+ */
+
+void swap(int *a, int *b)
+{
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
